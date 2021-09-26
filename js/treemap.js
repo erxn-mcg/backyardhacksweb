@@ -11,19 +11,19 @@ function drawTreeMap() {
       "img": "https://image.flaticon.com/icons/svg/124/124555.svg",
       "children": [
         {
-          "name": "Crops",
+          "name": "Environment",
           "parent": "Top Level",
           "img": "https://image.flaticon.com/icons/svg/616/616572.svg",
           "children": [
             {
-              "name": "Fruits",
+              "name": "Food",
               "parent": "Level 2: A",
-              "img": "https://image.flaticon.com/icons/svg/415/415744.svg"
+              "img": "https://cdn-icons-png.flaticon.com/128/706/706195.png"
             },
             {
-              "name": "Vegetables",
+              "name": "Sea Levels",
               "parent": "Level 2: A",
-              "img": "https://image.flaticon.com/icons/svg/135/135637.svg"
+              "img": "https://cdn-icons-png.flaticon.com/128/4978/4978389.png"
             }
           ]
         },
@@ -44,19 +44,19 @@ function drawTreeMap() {
             },
           ]
         },{
-        "name": "Habitats",
+        "name": "People",
           "parent": "Top Level",
-          "img": "https://image.flaticon.com/icons/svg/119/119591.svg",
+          "img": "https://cdn-icons-png.flaticon.com/128/599/599928.png",
           "children": [
             {
-              "name": "Wild Flowers",
+              "name": "Homes",
               "parent": "Level 2: A",
-              "img": "https://image.flaticon.com/icons/svg/740/740899.svg",
+              "img": "https://cdn-icons-png.flaticon.com/128/609/609803.png",
             },
             {
-              "name": "Trees",
+              "name": "Businesses",
               "parent": "Level 2: A",
-              "img": "https://image.flaticon.com/icons/svg/764/764006.svg",
+              "img": "https://cdn-icons-png.flaticon.com/128/3310/3310624.png",
             },
           ]
         }
