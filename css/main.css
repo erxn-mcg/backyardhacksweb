@@ -1,0 +1,195 @@
+h1 {
+    font-size: 36px;
+    margin: 10px 0;
+    text-transform: uppercase;
+    font-weight: normal;
+}
+
+h2, h3 {
+  font-size: 18px;
+  margin: 5px 0;
+  font-weight: normal;
+}
+
+p {
+  font-size: 15px;
+  font-weight: 330;
+}
+
+#sections {
+  position: relative;
+  display: inline-block;
+  width: 450px;
+}
+
+#vis {
+  display: inline-block;
+  position: fixed;
+  top: 60px;
+  height: 600px;
+  width: 600px;
+  margin-left:50px;
+  background-color:#fcfcfc;
+}
+
+#step1 {
+  margin-top: 70px;
+}
+
+#sick-bee, #healthy-bee {
+	 width: 50px;
+	 height: 50px;
+	 border-radius: 50%;
+	 display: inline-block;
+	 margin-left: 30px;
+	 margin-right: 30px;
+}
+
+.bee-legend {
+	margin-left: 90px;
+}
+
+#healthy-bee {
+	margin-left: 120px;
+}
+
+.in-line {
+	 display: inline-block;
+	 text-align: center;
+}
+
+/* increase the font size for the title class */
+.title {
+  font-size:35px;
+  font-weight:500;
+}
+
+.intro {
+  font-size:18px;
+  font-weight:330;
+}
+
+.fact {
+  font-size:25px;
+  font-weight:350;
+  color: gray;
+  font-style: italic;
+}
+
+.source {
+	font-size:18px;
+	color: #ffbf00;
+}
+
+/* Give the step class a margin bottom of 300px */
+.step {
+  margin-bottom:300px;
+}
+
+#pesticides-slider {
+	display: inline-block;
+	max-width: 400px;
+	width: 80%;
+	position: absolute;
+	margin-top: 10px;
+	margin-left: 30px;
+}
+
+#pest-text {
+	max-width: 400px;
+	width: 80%;
+	position: absolute;
+	margin-left: 100px;
+}
+
+/* https://css-tricks.com/making-pure-css-playpause-button/ */
+.playpause label {
+  display: inline-block;
+  box-sizing: border-box;
+  width: 0;
+  height: 36px;
+  border-color: transparent transparent transparent #202020;
+  transition: 100ms all ease;
+  cursor: pointer;
+  border-style: double;
+  border-width: 0px 0 0px 30px;
+}
+.playpause input[type="checkbox"] {
+  position: absolute;
+  left: -9999px;
+}
+.playpause input[type="checkbox"]:checked + label {
+  border-style: solid;
+  border-width: 18px 0 18px 30px;
+}
+.playpause input[type="checkbox"]:focus + label {
+  box-shadow: 0 0 5px lightblue;
+}
+
+/******  TREE LAYOUT MONICA  ******/
+
+@import url(http://fonts.googleapis.com/css?family=Source+Code+Pro:400,600);
+body {
+    font-family: "Source Code Pro", Consolas, monaco, monospace;
+    line-height: 160%;
+    font-size: 16px;
+    margin: 0;
+}
+
+path.link {
+  fill: none;
+  stroke-width: 2px;
+}
+.node:not(:hover) .nodetext {
+  display: none;
+}
+
+header {
+    padding: 20px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+a:link {
+    color: #EE3124;
+    text-decoration: none;
+}
+a:visited {
+     color: #EE3124;
+    }
+a:hover {
+     color: #ffbf00;; text-decoration: underline;
+    }
+a:active {
+     color: #EE3124;
+    }
+
+
+ /*tree map links*/
+.node {
+  cursor: pointer;
+}
+
+
+.node text {
+  font: 12px sans-serif;
+}
+
+.link {
+  fill: none;
+  stroke: #ccc;
+  stroke-width: 2px;
+}
+/******  LINE CHART DARRYL ******/
+
+.axis {
+	  font: 10px sans-serif;
+	}
+
+	.axis path,
+	.axis line {
+	  fill: none;
+	  stroke: #000;
+	  shape-rendering: crispEdges;
+	}

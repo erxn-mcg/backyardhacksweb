@@ -1,0 +1,77 @@
+{
+  "name": "bees",
+  "img": "https://www.shareicon.net/data/128x128/2016/04/12/748601_insect_512x512.png",
+  "size": 60000,
+  "children": [
+    {
+      "name": "Food",
+      "img": "https://image.flaticon.com/icons/svg/755/755335.svg",
+      "size": 35000,
+      "children": [
+        {
+          "item": "Apple",
+          "name": "Fruit",
+          "link": "",
+          "img": "https://www.shareicon.net/data/128x128/2017/04/22/885102_apple_512x512.png",
+          "size": 40000
+        },
+        {
+          "item": "Avocado",
+          "name": "Fruit",
+          "link": "",
+          "img": "https://www.shareicon.net/data/128x128/2016/08/01/805194_food_512x512.png",
+          "size": 40000
+        },
+        {
+          "item": "Almonds",
+          "name": "Nut",
+          "link": "",
+          "img": "https://www.shareicon.net/data/128x128/2016/08/29/820670_food_512x512.png",
+          "size": 40000
+        }
+      ]
+    },
+    {
+      "name": "Things",
+      "img": "https://image.flaticon.com/icons/svg/346/346195.svg",
+      "size": 35000,
+      "children": [
+        {
+          "item": "Cotton",
+          "name": "Used in clothing, cotton swabs, and more!",
+          "link": "",
+          "img": "https://www.shareicon.net/data/128x128/2016/09/21/831930_medical_512x512.png",
+          "size": 40000
+        },
+        {
+          "item": "Cotton",
+          "name": "Used in clothing, cotton swabs, and more!",
+          "link": "",
+          "img": "https://image.flaticon.com/icons/svg/188/188317.svg",
+          "size": 40000
+        }
+      ]
+    },
+    {
+      "name": "Bee-Things",
+      "img": "https://image.flaticon.com/icons/svg/704/704834.svg",
+      "size": 35000,
+      "children": [
+        {
+          "item": "Honey",
+          "name": "No more of the naturally sweetner :(",
+          "link": "",
+          "img": "https://www.shareicon.net/data/128x128/2016/04/11/747927_food_512x512.png",
+          "size": 40000
+        },
+        {
+          "item": "Flowers",
+          "name": "No beautiful earth :(",
+          "link": "",
+          "img": "https://www.shareicon.net/data/128x128/2016/11/16/854285_flower_512x512.png",
+          "size": 40000
+        }
+      ]
+    }
+  ]
+}

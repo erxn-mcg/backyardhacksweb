@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Final Project </title>
+
+      <!-- Libraries -->
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+      <!-- jQuery -->
+      <script src="https://code.jquery.com/jquery.min.js"></script>
+      <!-- D3 -->
+      <script src="https://d3js.org/d3.v3.js"></script>
+
+      <!-- js files -->
+      <script type="text/javascript" src="js/scroller.js"></script>
+      <script type="text/javascript" src="js/queue.js"></script>
+      <script src="js/treelayout.js" type="text/javascript"></script>
+      <script src="js/linechart.js" type="text/javascript"></script>
+
+      <!--Interactive Grid
+        https://github.com/interactivethings/d3-grid-->
+      <script src="js/d3.grid.js"></script>
+      <!-- main.css -->
+      <link rel="stylesheet" href="css/main.css" />
+
+  </head>
+
+  <body>
+    <div class="container">
+      <div id='graphic'>
+        <div id='sections'>
+          <section id="step1" class="step">
+          <div class="title">Welcome to Save the Bees!</div><br>
+              <p class="intro">As our final project for INFO 474, Darryl Ly, Monica Keosombath, and Iris Sun have teamed up to create an interactive visualization story to help Save the Bees!<br><br>
+                Scroll through this site to learn what's all the buzz, and why you should care about the decline of honey bees.
+              </p>
+          </section>
+          <section class="step">
+						<div class="title">What things do bees contribute to?</div><br>
+						<p class="intro">The most important thing a bee does is pollinate! Bees are responsible for a large portion of agriculture ranging from fruits, vegetables, oils, nuts, and much more. <br><br>Without bees, we would have a scarcity of
+							 some of our favorite foods because there would be no ingredients to make it. This does not only apply to agricultural foods, but also crops that provide biofuels (canola oil and palm oil), fibers (cotton), and forage for livestock. </p><br><br>
+          </section>
+          <section class="step">
+              <div class="title">So What's the Problem?</div><br>
+               <p class="intro">Although there are many factors leading to the declination of bees, we will be focusing on pesticides and its effect on colony collapse disorder.
+                 <br><br> In a recent study, it was found that on a global scale: </p> <br>
+                <p class="fact">“75% of [honey] samples had measurable quantities of [neonicotinoid insecticides]”
+									<a class="source" href="https://www.theguardian.com/environment/2017/oct/05/honey-tests-reveal-global-contamination-by-bee-harming-pesticides">(source)</a></p>
+          </section>
+            <section class="step">
+                 <p class="fact">"Contamination rates were highest in North America with 86% of samples containing one or more neonicotinoid."</p><br>
+                   <p class="intro">This was followed by Asia with <b>80%</b> and Europe with <b>79%</b>. The lowest was in South America with <b>57%</b>. <br><br>
+                     Even more, almost <i><b>half</b></i> the samples contained a mix of insecticides.</p><br>
+										<p class="intro">What's more is that pesticides are a known contributor to Colony Collapse Disorder - another
+										factor contributing to the decline of honey bees.</p>
+          </section>
+          <section class="step">
+              <div class="title">What is Colony Collapse Disorder?</div><br>
+               <p class="intro">Good question! CCD is the phenomenon that occurs when the majority of worker bees in a colony disappear and leave behind their queen.
+               <br><br>With the lack of support, the leftover nurse bees cannot successfully care for the queen and the children bees. This simulation represents how
+						 		CCD occurs in a hive.</p><br>
+							 		<span class="in-line"><div id="healthy-bee" style="background-color:#ffbf00"></div><p class="bee-legend">Healthy bee</p></span>
+							 		<span class="in-line"><div id="sick-bee" style="background-color:#C86464"></div><p class="">Sick bee</p></span>
+          </section>
+          <section class="step">
+              <div class="title">How do Pesticides contribute to CCD?</div><br>
+							<p class="intro">When bees pollinate a crop with pesticides, not only is their health decreased, but their neurological systems can become harmed.
+							<br><br>This can affect the bees' ability to remember how to get back to their hives</p><br><br>
+							 <div class="playpause">
+								 <input type="checkbox" value="None" id="playpause" name="check"/><label for="playpause"></label>
+									 <input id="pesticides-slider" type="range" min="1" max="101" value = "50" step ="10"/><br>
+									 <span id="pest-text"><p class="intro">Amount of Pesticides used: </p><span id="p-amount">Medium</span></span>
+							 </div>
+
+
+          </section>
+          <section class="step">
+              <div class="title">So how will this affect crops?</div><br>
+              <p class="fact">"Bees pollinate 70% of the world’s crops"</p>
+              <p class ="intro">Although there are other pollinators, bees are the biggest contributors to the world’s crops. For example, honey bees contribute to <b>100%</b>
+								of almond yield, <b>90%</b> of apple yield and about <b>50%</b> of coffee yields. Almonds and apples depend heavily on honey bees
+								for pollination because they are no self-compatible. <br><br>The seeds of one plant are unable to pollinate the rest of the plant. Therefore,
+								they require honey bees to carry seeds between plants to cross-pollinate. These three types of food are only a small percentage of things that will be affected with the decline of honey bees</p>
+               <br>
+               <td>
+                 <input type="Button" class="btn btn-success" value="Almonds" onclick="changeAlmond()"/>
+               </td><td>
+                 <input type="Button" class="btn btn-danger" value="Apple" onclick="changeApple()"/>
+               </td><td>
+                 <input type="Button" class="btn btn-primary" value="Coffee" onclick="changeCoffee()"/>
+               </td>
+          </section>
+          <section class="step">
+						<div class="title">How will we be affected if bees are gone?</div><br>
+						 <p class= intro>Along with the fruits and vegetable crops we've already discussed, the list could go on! Fruits and vegetables like blueberries, carrots, cherries, cucumbers, and watermelon would not easily attainable. Living without these ingredients would make every picnic a sad one :(
+							 <br><br> Bees help with not only the pollination of food, but also the pollination of wild flowers. Living without beautiful flowers could make the world seem less colorful. Some animal life are also indirectly affected by bees because if bees are unable to pollinate food such as clover or alfalfa for cattle, they would be very limited on food to eat.
+							 <br><br> Bees also contribute to the economy by providing <b>$150 million</b> of honey in a single year. By being a natural pollinator, bees were able to provide <b> $19 billion</b> of added value to agriculture business in 2010.
+						 </p>
+          </section>
+					<section class="step">
+              <div class="title">So what will you do?</div>
+          </section>
+            </div>
+            <div id="vis">
+            </div>
+            <div id="test"></div>
+          </div>
+    </div>
+
+    <script src="js/index.js"></script>
+
+    <script src="js/d3-waffle.js"></script>
+    <script src="js/d3.grid.js"></script>
+    <script src="js/linechart.js"></script>
+    <script src="js/queue.js"></script>
+    <script src="js/scroller.js"></script>
+    \<script src="js/simulation.js"></script>
+    <script src="js/treelayout.js"></script>
+    <script src="js/treemap.js"></script>
+
+
+    <!-- Bootstrap, ignore for the tutorial -->
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+    integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+    integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  </body>
+
+</html>
