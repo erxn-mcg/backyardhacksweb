@@ -77,7 +77,7 @@ $.when(
 				.attr("id", "question")
 				.append('svg:image')
 				.attr({
-				  'xlink:href': 'img/question.png',
+				  'xlink:href': 'img/earth.png',
 				  x: 100,
 				  y: 50,
 				  width: 400,
