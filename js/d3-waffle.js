@@ -1,13 +1,13 @@
 // SVG to work with
 function drawPesticides() {
   var data2 = [
-    { "name": "Clean Honey (Global)", "value": 25},
-    { "name": "Infected Honey (Global)", "value": 75}
+    { "name": "Human Produced Carbon (Global)", "value": 1},
+    { "name": "Naturally Produced Carbon (Global)", "value": 99}
   ]
 
   /* to color elements we use the class name ( slugigy(name) ) */
   var domain = data2.map(function(d){ return slugify(d.name); })
-  var range = ["#ffbf00", "#fff", "#a0d0de", "#97b5cf"]
+  var range = ["#708090", "#fff", "#a0d0de", "#97b5cf"]
   var palette = d3.scale.ordinal().domain(domain).range(range);
 
   var chart4 = d3waffle("&#11042")
@@ -22,13 +22,13 @@ function drawPesticides() {
     .attr("id", "waffle1")
     .datum(data2)
     .call(chart4)
-    .attr("stroke", "#ffbf00");
+    .attr("stroke", "#708090");
 }
 
 function drawPesticidesUS() {
   var data2 = [
-    { "name": "Clean Honey (North America)", "value": 14},
-    { "name": "Infected Honey (North America)", "value": 86}
+    { "name": "Carbon in Total Human Emissions", "value": 80},
+    { "name": "Other in Total Human Emissions", "value": 20}
   ]
 
   /* to color elements we use the class name ( slugigy(name) ) */
