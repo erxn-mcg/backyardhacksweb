@@ -21,7 +21,7 @@ $.when(
 				.attr("id", "bees")
 				.append('svg:image')
 				.attr({
-				  'xlink:href': 'img/images.jpeg',
+				  'xlink:href': 'img/carbon.png',
 				  x: 25,
 				  y: 150,
 				  width: 550,
